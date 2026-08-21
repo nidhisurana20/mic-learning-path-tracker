@@ -1,0 +1,120 @@
+{
+  "domains": [
+    {
+      "id": "cloud",
+      "name": "Cloud",
+      "description": "Core Azure cloud skills — provisioning, administering, developing and architecting cloud solutions."
+    },
+    {
+      "id": "ai-data",
+      "name": "AI / Data",
+      "description": "Data fundamentals through applied AI engineering and data science on Azure."
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "description": "Security, compliance and identity fundamentals through security operations and architecture."
+    }
+  ],
+
+  "certs": [
+    {
+      "id": "AZ-900",
+      "domain": "cloud",
+      "name": "Azure Fundamentals",
+      "description": "Core Azure concepts: cloud services, pricing, SLAs, and the shared responsibility model.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+      "prerequisites": []
+    },
+    {
+      "id": "AZ-104",
+      "domain": "cloud",
+      "name": "Azure Administrator Associate",
+      "description": "Manage Azure identities, storage, compute and virtual networks day to day.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+      "prerequisites": ["AZ-900"]
+    },
+    {
+      "id": "AZ-204",
+      "domain": "cloud",
+      "name": "Azure Developer Associate",
+      "description": "Design, build, test and maintain cloud applications and services on Azure.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/",
+      "prerequisites": ["AZ-900"]
+    },
+    {
+      "id": "AZ-305",
+      "domain": "cloud",
+      "name": "Azure Solutions Architect Expert",
+      "description": "Design infrastructure, data, business continuity and identity solutions on Azure.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+      "prerequisites": ["AZ-104"]
+    },
+
+    {
+      "id": "AI-900",
+      "domain": "ai-data",
+      "name": "Azure AI Fundamentals",
+      "description": "Fundamentals of AI workloads: machine learning, computer vision, NLP and generative AI on Azure.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+      "prerequisites": []
+    },
+    {
+      "id": "DP-900",
+      "domain": "ai-data",
+      "name": "Azure Data Fundamentals",
+      "description": "Core data concepts: relational, non-relational and analytics workloads on Azure.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+      "prerequisites": []
+    },
+    {
+      "id": "AI-102",
+      "domain": "ai-data",
+      "name": "Azure AI Engineer Associate",
+      "description": "Build and manage AI solutions using Azure AI services, including vision, language and generative AI.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/",
+      "prerequisites": ["AI-900"]
+    },
+    {
+      "id": "DP-100",
+      "domain": "ai-data",
+      "name": "Azure Data Scientist Associate",
+      "description": "Run data science workloads on Azure Machine Learning: train, deploy and manage models.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist/",
+      "prerequisites": ["DP-900", "AI-900"]
+    },
+
+    {
+      "id": "SC-900",
+      "domain": "security",
+      "name": "Security, Compliance, and Identity Fundamentals",
+      "description": "Foundational concepts of security, compliance and identity across Microsoft cloud services.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+      "prerequisites": []
+    },
+    {
+      "id": "SC-200",
+      "domain": "security",
+      "name": "Security Operations Analyst Associate",
+      "description": "Investigate, respond to and hunt threats using Microsoft Sentinel, Defender and Purview.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+      "prerequisites": ["SC-900"]
+    },
+    {
+      "id": "SC-300",
+      "domain": "security",
+      "name": "Identity and Access Administrator Associate",
+      "description": "Design, implement and operate identity and access management with Microsoft Entra.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+      "prerequisites": ["SC-900"]
+    },
+    {
+      "id": "SC-100",
+      "domain": "security",
+      "name": "Cybersecurity Architect Expert",
+      "description": "Design zero-trust security strategy across identity, security operations and compliance.",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+      "prerequisites": ["SC-200", "SC-300"]
+    }
+  ]
+}
