@@ -1,6 +1,6 @@
-# MIC Learning Path Tracker — Backend (Option B)
+# MIC Learning Path Tracker — Backend (
 
-Stage 2, 1st Year (Fresher) submission — **Option B: Backend Only**.
+ 1st Year (Fresher) submission 
 
 A REST API that tracks free Microsoft certification/learning paths across three
 domains (Cloud, AI/Data, Security), computes each cert's state
