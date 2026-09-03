@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name": "MIC Learning Path Tracker API (Python/Flask)",
+    "description": "Backend-only submission for MIC Dev Recruitment Stage 2 (1st Year - Option B).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:3000" },
+    { "key": "userId", "value": "u1" },
+    { "key": "domainId", "value": "cloud" },
+    { "key": "certId", "value": "az-900" }
+  ],
+  "item": [
+    {
+      "name": "List domains",
+      "request": { "method": "GET", "url": "{{baseUrl}}/api/domains" }
+    },
+    {
+      "name": "List certs in a domain",
+      "request": { "method": "GET", "url": "{{baseUrl}}/api/domains/{{domainId}}/certs" }
+    },
+    {
+      "name": "Get user progress for a domain",
+      "request": { "method": "GET", "url": "{{baseUrl}}/api/users/{{userId}}/domains/{{domainId}}/progress" }
+    },
+    {
+      "name": "Mark a cert complete",
+      "request": {
+        "method": "POST",
+        "url": "{{baseUrl}}/api/users/{{userId}}/certs/{{certId}}/complete"
+      }
+    },
+    {
+      "name": "AI explain next step",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{baseUrl}}/api/users/{{userId}}/domains/{{domainId}}/explain",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"goal\": \"get into cloud\"\n}"
+        }
+      }
+    }
+  ]
+}
